@@ -22,48 +22,39 @@ const App = () => {
   };
 
   const moveAssistant = (targetPosition) => {
-    // Create a Three.js renderer
     const renderer = new THREE.WebGLRenderer();
     renderer.setSize(window.innerWidth, window.innerHeight);
 
-    // Load the FBX model
     const loader = new FBXLoader();
-    loader.load("/Iv.fbx", (fbx) => {
-      // Adjust the position, scale, and rotation of the loaded model
+    const fbxUrl = import.meta.env.BASE_URL + "Iv.fbx";
+
+    loader.load(fbxUrl, (fbx) => {
       fbx.position.set(assistantPosition.x, assistantPosition.y, 0);
       fbx.scale.set(0.1, 0.1, 0.1);
 
-      // Create a group to hold the model and animation
       const group = new THREE.Group();
       group.add(fbx);
 
-      // Set up camera position
       const camera = new THREE.PerspectiveCamera(
         75,
         window.innerWidth / window.innerHeight,
         0.1,
         1000
       );
-      camera.position.set(0, 0, 10); // Adjust camera position
+      camera.position.set(0, 0, 10);
 
-      // Add the group to the scene
       const scene = new THREE.Scene();
       scene.add(group);
 
-      const ambientLight = new THREE.AmbientLight(0xffffff, 0.5); // Add ambient light
+      const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
       scene.add(ambientLight);
 
-      // Calculate animation duration
-      const animationDuration = 1000; // 1 second
+      const animationDuration = 1000;
+      const frames = Math.floor(animationDuration / 16.7);
 
-      // Calculate animation frames
-      const frames = Math.floor(animationDuration / 16.7); // Assuming 60 FPS
-
-      // Calculate step values for position
       const stepX = (targetPosition.x - assistantPosition.x) / frames;
       const stepY = (targetPosition.y - assistantPosition.y) / frames;
 
-      // Start animation loop
       let frame = 0;
       const animate = () => {
         if (frame < frames) {
