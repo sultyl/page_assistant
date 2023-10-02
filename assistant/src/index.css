@@ -5,13 +5,3 @@
 .container {
   position: relative;
 }
-
-#root {
-  width: 200px;
-  height: 200px;
-  border: none;
-  padding: 0;
-  position: absolute; /* fixed or static */
-  top: 0;
-  left: 0;
-}
