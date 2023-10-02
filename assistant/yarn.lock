@@ -439,7 +439,7 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@react-three/fiber@latest":
+"@react-three/fiber@^8.14.4", "@react-three/fiber@latest":
   version "8.14.4"
   resolved "https://registry.yarnpkg.com/@react-three/fiber/-/fiber-8.14.4.tgz#44f05d91f98fc52441874c696dd9b607a6eb7fdf"
   integrity sha512-opkLsfO9sxTFlI26ycKcTsXViRtOa1v+0AQoeP6yQ59dkhABn+UKhGrx6/zWrH5mUxzg812zJd7sTJflZQmLgA==
