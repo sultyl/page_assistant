@@ -26,9 +26,7 @@ const App = () => {
     renderer.setSize(window.innerWidth, window.innerHeight);
 
     const loader = new FBXLoader();
-    const fbxUrl = import.meta.env.BASE_URL + "Iv.fbx";
-
-    loader.load(fbxUrl, (fbx) => {
+    loader.load("/Walking.fbx", (fbx) => {
       fbx.position.set(assistantPosition.x, assistantPosition.y, 0);
       fbx.scale.set(0.1, 0.1, 0.1);
 
