@@ -5,39 +5,3 @@
 /* src/components/OnPageAssistant.css */
 
 /* Style for the assistant container */
-.assistant {
-  background-color: rgba(255, 255, 255, 0.9); /* Transparent white background */
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 16px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1000; /* Ensure the assistant is above other content */
-}
-
-/* Style for the video element */
-.assistant video {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Style for the button */
-.fixed {
-  position: fixed;
-}
-
-/* Style for the hover icon button */
-.hover-icon-button {
-  background-color: #f0f0f0;
-  border-radius: 50%;
-  width: 36px;
-  height: 36px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.hover-icon-button:hover {
-  background-color: #e0e0e0;
-}
