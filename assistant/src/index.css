@@ -5,3 +5,17 @@
 .container {
   position: relative;
 }
+.button {
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .button {
+    margin-top: -10px;
+  }
+}

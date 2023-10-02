@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion"; // You'll need to install framer-motion
+import { motion, AnimatePresence } from "framer-motion";
 
 const Assistant = ({ position, message }) => {
   const [isVisible, setIsVisible] = useState(false);

@@ -11,7 +11,7 @@ const Button = ({ onClick, x, y, verticalOffset }) => {
   return (
     <button
       ref={buttonRef}
-      className="bg-[#FB00FA] hover:bg-[#B703B6] text-white font-bold py-2 px-4 rounded"
+      className="bg-[#FB00FA] hover:bg-[#B703B6] button text-white font-bold py-2 px-4 rounded"
       onClick={handleButtonClick}
       style={{ position: "absolute", left: x, top: y }}
     >

@@ -10,7 +10,7 @@ function App() {
       x: 20,
       y: 20,
       message: "This is Button 1",
-      verticalOffset: -520,
+      verticalOffset: -420,
     },
     { id: 2, x: 140, y: 20, message: "This is Button 2", verticalOffset: -420 },
     { id: 3, x: 260, y: 20, message: "This is Button 3", verticalOffset: -420 },
