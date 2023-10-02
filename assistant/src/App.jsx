@@ -12,10 +12,8 @@ function App() {
       message: "This is Button 1",
       verticalOffset: -520,
     },
-    { id: 2, x: 140, y: 20, message: "This is Button 2", verticalOffset: -500 },
-    { id: 3, x: 260, y: 20, message: "This is Button 3", verticalOffset: -500 },
-    { id: 4, x: 380, y: 20, message: "This is Button 4", verticalOffset: -500 },
-    { id: 5, x: 500, y: 20, message: "This is Button 5", verticalOffset: -500 },
+    { id: 2, x: 140, y: 20, message: "This is Button 2", verticalOffset: -420 },
+    { id: 3, x: 260, y: 20, message: "This is Button 3", verticalOffset: -420 },
   ];
   // ...
 
