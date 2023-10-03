@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 
 const Button = ({ onClick, x, y, verticalOffset }) => {
+  
   const buttonRef = useRef(null);
-
   const handleButtonClick = () => {
     const buttonRect = buttonRef.current.getBoundingClientRect();
     onClick({ x: buttonRect.left, y: buttonRect.top, verticalOffset });
@@ -11,7 +11,7 @@ const Button = ({ onClick, x, y, verticalOffset }) => {
   return (
     <button
       ref={buttonRef}
-      className="bg-[#FB00FA] hover:bg-[#B703B6] button text-white font-bold py-2 px-4 rounded"
+      className="bg-[#2a00fb] hover:bg-[#171f43] button text-white font-bold py-2 px-4 rounded"
       onClick={handleButtonClick}
       style={{ position: "absolute", left: x, top: y }}
     >
@@ -19,5 +19,4 @@ const Button = ({ onClick, x, y, verticalOffset }) => {
     </button>
   );
 };
-
 export default Button;

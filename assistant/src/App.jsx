@@ -9,11 +9,11 @@ function App() {
       id: 1,
       x: 20,
       y: 20,
-      message: "This is Button 1",
+      message: "This is the first button on this page",
       verticalOffset: -420,
     },
-    { id: 2, x: 140, y: 20, message: "This is Button 2", verticalOffset: -420 },
-    { id: 3, x: 260, y: 20, message: "This is Button 3", verticalOffset: -420 },
+    { id: 2, x: 140, y: 20, message: "This is the second button on this page", verticalOffset: -420 },
+    { id: 3, x: 260, y: 20, message: "This is the third button on this page", verticalOffset: -420 },
   ];
   // ...
 
